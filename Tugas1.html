@@ -2,50 +2,46 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	<title></title>
 </head>
 <body>
+
+	<div class="container">
 <form action="" method="post">
 
-	<table width="700px">
-		<tr>
-			<th width="180px">
-
-			</th>
-			<th width="30px">
-
-			</th>
-			<th width="150px">FORM BIODATA</th>
-		</tr>
-
-
-
-
-
-
+		<div class="mb-3">
 		<tr>
 			<td><label for="nama">NIM</label></td> 
 			<td>:</td>
-			<td><input required type="text" name="nim" id="nim" placeholder="Masukan Nim anda"></td>
+			<td><input required class="form-control" name="nim" id="nim" placeholder="Masukan Nim anda"></td>
 		</tr>
+	</div>
 
+		<div class="mb-3">
 		<tr>
 			<td><label for="nama">NAMA</label></td>
 			<td>:</td>
-			<td><input required type="text" name="nama" id="nama"></td>
+			<td><input required class="form-control" name="nama" id="nama"></td>
 		</tr>
+	</div>
 
+			<div class="mb-3">
 		<tr>
 			<td><label for="jk">JENIS KELAMIN</label></td>
 			<td>	:	</td>
 			<td><input type="radio" name="jk" id='jk' value="L"> Laki-Laki
 			<input required type="radio" name="jk" id='jk' value="P"> Perempuan </td>
 		</tr>
+	</div>
 
+		<div class="mb-3">
 		<tr>
 			<td><label for="Jurusan">JURUSAN</label></td>
 			<td>:</td>
-			<td><select name="Jurusan">
+			<td><select class="form-control" name="Jurusan" required>
 				<option value="">Pilih Jurusan :</option>
 				<option selected value="S1RPL">S1 RPL</option>
 				<option value="S1 ILKOM">S1 ILKOM</option>
@@ -53,6 +49,9 @@
 			<option value="S1 HUKUM">S1 HUKUM</option>
 				</select> </td> 
 		</tr>
+	</div>
+
+		<div class="mb-3">
 
 		<tr>
 			<td><label for="hobby">HOBBY</label></td>
@@ -62,44 +61,56 @@
 			<input type="checkbox" name="hobby" value="olahraga"> Olahraga
 			<input type="checkbox" name="hobby" value="Travelling"> Travelling </td>
 		</tr>
+	</div>
 
+			<div class="mb-3">
 			<tr>
 			<td><label for="catatan">CATATAN</label></td>
 			<td>:</td>
-			<td><textarea required="catatan" id="catatan" cols="50" rows="4"></textarea></td>
+			<td><textarea class="form-control" required name="catatan" id="catatan" cols="50" rows="4"></textarea></td>
 		</tr>
+		</div>
 
+		<div class="mb-3">
 		<tr>
 			<td><label for="foto">FOTO</label></td>
 			<td>:</td>
 			<td><input type="file" name="foto" accept="image/*"></td>
 		</tr>
+	</div>
 
+		<div class="mb-3">
 		<tr>
 			<td><label for="email">EMAIL</label></td>
 			<td>:</td>
-			<td><input required type="text" name="email" id="email"></td>
+			<td><input required class="form-control" name="email" id="email"></td>
 		</tr>
+	</div>
 
+		<div class="mb-3">
 		<tr>
 			<td><label for="password">SANDI LOGIN</label></td>
 			<td>:</td>
-			<td><input type="password" name="password"></tr>
+			<td><input required class="form-control" name="password"></tr>
 		</tr>
+	</div>
 
+		<div class="mb-3">
 		<tr>
-			<td><label for="password">ULANGI SANDI LOGIN</label></td>
+			<td><label  for="password">ULANGI SANDI LOGIN</label></td>
 			<td>:</td>
-			<td><input type="password" name="password"></td>
+			<td><input required class="form-control" name="password"></td>
 		</tr>
+	</div>
 
 		<tr>
 			<td></td>
 			<td></td>
-			<td><input type="submit" name="submit" value="Simpan Data">
-			<input type="reset" value="Batal">
-			<button type="botton" onclick="alert('silahkan isi semua colom!')">Peringatan</button></td>
+			<td><input type="submit" class="btn btn-success" name="submit" value="Simpan Data">
+			<input type="reset" class="btn btn-warning" value="Batal">
+			<button type="botton" class="btn btn-danger" onclick="alert('silahkan isi semua colom!')">Peringatan</button></td>
 		</tr>
-	</table>
+</div>
+			<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
